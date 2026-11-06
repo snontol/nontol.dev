@@ -24,6 +24,9 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     background-color: var(--color-background);
+    background-image: radial-gradient(circle at 80% 40%, rgba(151, 203, 220, 0.7), transparent 45%);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -82,7 +85,12 @@ h3 {
 
 /* 3. Header y navegación */
 
-header {
+header  {
+    background-color: var(--color-surface);
+    box-shadow: 0 2px 8px rgba(6, 24, 51, 0.06);
+}
+
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,6 +114,16 @@ nav a {
     white-space: nowrap;
 }
 
+.logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
 
 /* 4. Secciones */
 
@@ -209,8 +227,23 @@ section {
 }
 
 .hero-logo {
-    width: 180px;
-    align-self: center;
+    width: 120px;
+    align-self: flex-start;
+    animation: reveal 1.8s ease-in-out 0.3s both;
+    order: -1;
+}
+
+@keyframes reveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.hero-name {
+    display: block;
 }
 
 /* 5. Footer */
@@ -246,6 +279,8 @@ footer {
     .hero-logo {
     width: 360px;
     flex-shrink: 0;
+    order: 0;
+    align-self: center;
 }
 
 }
