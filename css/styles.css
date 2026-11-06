@@ -103,10 +103,17 @@ nav a {
     white-space: nowrap;
 }
 
+
 /* 4. Secciones */
 
 section {
     padding: 4rem 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* 5. Footer */
