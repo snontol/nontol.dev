@@ -44,4 +44,8 @@ a:hover {
 
 /* 4. Secciones */
 
+section {
+  padding: 4rem 1.5rem;
+}
+
 /* 5. Footer */
