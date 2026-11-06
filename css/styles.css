@@ -7,45 +7,74 @@
     --color-footer: #001b48;
     --main-font: 'Montserrat', sans-serif;
 }
+
 /* 2. Reset y estilos base */
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 body {
-  margin: 0;
-  font-family: var(--main-font);
-  color: var(--color-text);
-  line-height: 1.6;
-  background-color: var(--color-background);
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--color-text);
+    line-height: 1.6;
+    background-color: var(--color-background);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 a {
-  color: var(--color-link);
-  text-decoration: none;
+    color: var(--color-link);
+    text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-text);
-  text-decoration: underline;
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
 }
 
 /* 3. Header y navegación */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem 1.5rem; 
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.logo,
+nav a {
+    white-space: nowrap;
+}
+
 /* 4. Secciones */
 
 section {
-  padding: 4rem 1.5rem;
+    padding: 4rem 1.5rem;
 }
 
 /* 5. Footer */
