@@ -205,6 +205,14 @@ section {
 
 /* 5. Footer */
 
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-background);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 0.875rem;
+}
+
 /* 6. Media queries */
 
 @media (min-width: 768px) {
