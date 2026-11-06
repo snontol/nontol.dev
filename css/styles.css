@@ -30,6 +30,16 @@ img {
   display: block;
 }
 
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
 /* 3. Header y navegación */
 
 /* 4. Secciones */
