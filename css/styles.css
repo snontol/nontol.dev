@@ -141,7 +141,7 @@ section {
     color: var(--color-link);
 }
 
-.hero-buttons {
+.button-group {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -201,7 +201,6 @@ section {
 .about-text p:first-child {
     margin-top: 0;
 }
-
 
 
 /* 5. Footer */
