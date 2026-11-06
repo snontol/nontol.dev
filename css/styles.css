@@ -5,6 +5,7 @@
     --color-accent: #97cbdc;
     --color-background: #dde8f0;
     --color-footer: #001b48;
+    --color-surface: #ffffff;
     --main-font: 'Montserrat', sans-serif;
 }
 
@@ -114,6 +115,26 @@ section {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(6,24, 51, 0.08);
+}
+
+.project-card img {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0.5rem;
 }
 
 /* 5. Footer */
